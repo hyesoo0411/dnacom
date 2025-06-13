@@ -1,0 +1,25 @@
+# config.yaml
+seed: 42
+device: cuda
+
+# Hyperparameters
+num_epochs: 20
+batch_size: 32
+hidden_units: 200 # 200 400 800 1600
+learning_rate: 0.001
+apply_quantization: true
+bias: false
+pruning: true
+scale_factor: 1
+noise: 0.8
+
+# Directories
+train_dir: "Dataset/train"
+test_dir: "Dataset/test"
+model_dir: "models"
+loss_curve_dir: "LossCurve"
+
+# Model Settings
+input_shape: 49
+output_shape: 10
+
